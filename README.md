@@ -155,3 +155,98 @@ button:hover {
 - Experiment with additional attributes (e.g., `alt`, `title`, `class`) to extend functionality.
 
 ---
+
+# 🔍 JavaScript Statements vs. Expressions
+
+In JavaScript, **statements** and **expressions** are two fundamental building blocks of code. While they may seem similar, they serve different purposes. Here's a detailed breakdown:
+
+---
+
+## ✨ **1. JavaScript Expressions**
+
+An **expression** is any valid unit of code that produces a value.
+
+### **Key Characteristics**:
+
+- ✅ Always evaluates to a value.
+- ✅ Can be used wherever a value is expected (e.g., in assignments or function arguments).
+- ✅ Examples include literals, variables, or combinations of operators and function calls.
+
+### **Examples**:
+
+```javascript
+5 + 10 // Expression that evaluates to 15
+'Hello' + 'World' // Expression that evaluates to "HelloWorld"
+Math.max(3, 7) // Expression that evaluates to 7
+```
+
+### **Usage in Code**:
+
+```javascript
+let result = 5 + 10 // Expression used in an assignment
+console.log('Hello' + 'World') // Expression passed as an argument
+```
+
+---
+
+## ✨ **2. JavaScript Statements**
+
+A **statement** is a piece of code that performs an action. It often contains expressions but does not always produce a value directly.
+
+### **Key Characteristics**:
+
+- 📜 Describes a task or action.
+- 📜 Typically ends with a semicolon (`;`), though it's optional in some cases.
+- 📜 Examples include variable declarations, loops, conditionals, and function calls.
+
+### **Examples**:
+
+```javascript
+let x = 10 // Declaration statement
+if (x > 5) {
+  // If statement
+  console.log(x) // Expression as part of a statement
+}
+```
+
+### **Usage in Code**:
+
+```javascript
+let age = 25 // Statement
+if (age > 18) {
+  console.log('Adult') // Statement containing an expression
+}
+```
+
+---
+
+## 🔑 **Key Differences**
+
+| **Feature**        | **Expression**                            | **Statement**                        |
+| ------------------ | ----------------------------------------- | ------------------------------------ |
+| **Definition**     | Produces a value.                         | Performs an action.                  |
+| **Example**        | `5 + 10`, `"Hello" + "World"`.            | `let x = 10;`, `if (x > 5) { ... }`. |
+| **Standalone Use** | Can be used as part of another statement. | Often forms a complete unit of code. |
+| **Evaluation**     | Always evaluates to a value.              | May or may not include expressions.  |
+
+---
+
+## 🔗 **Relationship Between the Two**
+
+- **Expressions** can be part of a **statement**:
+  ```javascript
+  let total = 5 + 10 // `5 + 10` is an expression within the assignment statement.
+  ```
+- Some constructs, like function calls, can act as both expressions and statements:
+  ```javascript
+  console.log('Hello') // Statement
+  ;('Hello') // Expression
+  ```
+
+---
+
+## 💡 Conclusion
+
+Understanding when to use statements or expressions will help you write more efficient and structured JavaScript code!
+
+---
