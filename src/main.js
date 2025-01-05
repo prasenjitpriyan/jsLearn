@@ -1,16 +1,16 @@
-import './style.css'
-import { setupCounter } from './counter.js'
+let saveEl = document.getElementById('save-el')
+let count = 0
 
-document.querySelector('#app').innerHTML = `
-  <div>
-    <h1>Hello Vite!</h1>
-    <div class="card">
-      <button id="counter" type="button"></button>
-    </div>
-    <p class="read-the-docs">
-      Click on the Vite logo to learn more
-    </p>
-  </div>
-`
+// Increment button event listener
+document.getElementById('increment').addEventListener('click', () => {
+  count += 1
+  document.getElementById('counter').textContent = count
+})
 
-setupCounter(document.querySelector('#counter'))
+// Save button event listener
+document.getElementById('save').addEventListener('click', () => {
+  let countStr = count + ' - '
+  saveEl.textContent += countStr
+  count = 0
+  document.getElementById('counter').textContent = count
+})
